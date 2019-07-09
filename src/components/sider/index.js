@@ -1,8 +1,12 @@
 import React from 'react';
 import { Menu, Typography } from 'antd';
 import PropTypes from 'prop-types';
+import { UseStateValue } from '../../provider';
 
 function SiderComponent({ layout }) {
+  const [state] = UseStateValue();
+  const { item } = state;
+
   function handleClickMenu({ key }) {
     console.log(key);
   }
@@ -14,15 +18,15 @@ function SiderComponent({ layout }) {
       theme="light"
     >
       <Menu
-        defaultOpenKeys={['vwcs']}
+        defaultOpenKeys={['hooks']}
         defaultSelectedKeys={['event']}
         mode="inline"
         onClick={handleClickMenu}
       >
         <Menu.SubMenu
-          key="vwcs"
+          key="hooks"
           title={
-            <Typography.Text>VWCS</Typography.Text>
+            <Typography.Text>{item}</Typography.Text>
           }
         >
           <Menu.Item key="event">Event</Menu.Item>
