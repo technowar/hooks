@@ -1,9 +1,9 @@
 import React from 'react';
 import { Layout } from 'antd';
-import Footer from '../footer';
-import Header from '../header';
-import Sider from '../sider';
-import './index.css';
+import Footer from './footer';
+import Header from './header';
+import Sider from './sider';
+import './styles.css';
 
 export default (BaseComponent) => {
   function LayoutComponent(props) {

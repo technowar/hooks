@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navigations from './navigations';
-import { InitialState, StateProvider } from './provider';
-import Reducers from './reducers';
-import * as serviceWorker from './serviceWorker';
+import Navigations from 'navigations';
+import { InitialState, StateProvider } from 'provider';
+import Reducers from 'reducers';
+import * as serviceWorker from 'serviceWorker';
 import 'antd/dist/antd.css';
 
 ReactDOM.render(

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'antd';
-import { UseStateValue } from '../../provider';
+import { UseStateValue } from 'provider';
 
 function Index() {
   const [, dispatch] = UseStateValue();
